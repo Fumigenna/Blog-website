@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<ul>
+     {%for BlogEntry in all_entries%}
+    <li>
+
+        <a href="/Blog/{{BlogEntry.id}}">{{BlogEntry.entryTitle}}</a>
+
+    </li>
+     {%endfor%}
+</ul>
