@@ -25,7 +25,7 @@ SECRET_KEY = 'rkan9xr6w#@*c_w2^cqq)akrl&pq%^7e)55&*f&d84vi@c#*!$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'fumigenna.pythonanywhere.com', u'127.0.0.1']
 
 
 # Application definition

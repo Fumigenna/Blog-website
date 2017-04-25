@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.template import loader
 
 
-def index(request):
+def index_blog(request):
     from .models import BlogEntry
 
     all_entries = BlogEntry.objects.all()
