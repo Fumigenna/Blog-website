@@ -15,4 +15,6 @@ db.sqlite3\
 /static\
 .DS_Store
 \fs32 \
+\settings.py
+\index.html
 }

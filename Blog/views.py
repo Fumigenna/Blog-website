@@ -6,12 +6,15 @@ def index_blog(request):
     from .models import BlogEntry
 
     all_entries = BlogEntry.objects.all()
-    print all_entries
+    count = BlogEntry.objects.count()
     template = loader.get_template('blog/index.html')
     context = {
-        'all_entries': all_entries
+        'all_entries': all_entries,
+        'count': count
     }
+
     return HttpResponse(template.render(context, request))
+
 
 
 
