@@ -28,6 +28,7 @@ ALLOWED_HOSTS = [u'fumigenna.pythonanywhere.com', u'127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'Contact.apps.ContactConfig',
     'Blog.apps.BlogConfig',
     'Home.apps.HomeConfig',
     'django.contrib.admin',

@@ -15,18 +15,16 @@
 
 
     <!-- Bootstrap core CSS -->
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+      {% load staticfiles %}
+      <link href="{%static 'Contact/css/bootstrap.min.css'}%" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+      {% load staticfiles %}
+    <link href="{% static 'Contact/css/cover.css'%}" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -82,8 +80,8 @@
                       </div>
 <div class="download">
 <br>
-
-  <img src="me.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="236">
+    {%load staticfiles%}
+  <img src="{%static 'contact/me.jpg'%}" class="img-thumbnail" alt="Me" width="250" height="236">
 
 </div>
 
@@ -99,10 +97,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    {%load staticfiles%}
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
   </body>
 </html>

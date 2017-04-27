@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
 
-def index(request):
+def index_contact(request):
 
     template = loader.get_template('contact/contact.html')
     context = { }

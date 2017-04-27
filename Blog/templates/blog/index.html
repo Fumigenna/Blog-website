@@ -41,7 +41,7 @@
                   <ul class="nav masthead-nav">
                     <li><a href="/">Home</a></li>
                     <li class="active"><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/contact">Contact</a></li>
                   </ul>
           </nav>
       </div>
@@ -63,7 +63,7 @@
           {%for BlogEntry in all_entries%}
           <div class="blog-post">
             <h2 class="blog-post-title">{{BlogEntry.entryTitle}}</h2>
-            <p class="blog-post-meta">{{BlogEntry.entryDate}} by <a href="#">Irina</a></p>
+            <p class="blog-post-meta">{{BlogEntry.entryDate}} by <a href="/contact">Irina</a></p>
 
             <p>{{BlogEntry.entryText}}</p>
           </div><!-- /.blog-post -->
