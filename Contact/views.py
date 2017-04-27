@@ -1,6 +1,8 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from django.http import HttpResponse
+from django.template import loader
 
-from django.shortcuts import render
+def index(request):
 
-# Create your views here.
+    template = loader.get_template('contact/contact.html')
+    context = { }
+    return HttpResponse(template.render(context, request))

@@ -5,7 +5,7 @@ from django.template import loader
 def index_blog(request):
     from .models import BlogEntry
 
-    all_entries = BlogEntry.objects.all()
+    all_entries = BlogEntry.objects.all().order_by('-entryDate')
     count = BlogEntry.objects.count()
     template = loader.get_template('blog/index.html')
     context = {
