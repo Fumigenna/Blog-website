@@ -20,5 +20,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include('Home.urls')),
     url(r'^blog', include('Blog.urls')),
-    url(r'^contact', include('Contact.urls'))
+    url(r'^contact', include('Contact.urls')),
+    url(r'^CV', include('CV.urls'))
 ]

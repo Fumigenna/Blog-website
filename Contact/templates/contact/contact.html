@@ -16,14 +16,14 @@
 
     <!-- Bootstrap core CSS -->
       {% load staticfiles %}
-      <link href="{%static 'Contact/css/bootstrap.min.css'}%" rel="stylesheet">
+      <link href="{% static 'Contact/css/bootstrap.min.css'%}" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
       {% load staticfiles %}
-    <link href="{% static 'Contact/css/cover.css'%}" rel="stylesheet">
+    <link href="{% static 'Contact/css/contact.css'%}" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,7 +46,7 @@
 
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="/"><a href="#">Home</a></li>
+                  <li><a href="/">Home</a></li>
                   <li><a href="/blog">Blog</a></li>
                   <li class="active"><a href="#">Contact</a></li>
                 </ul>
@@ -74,7 +74,7 @@
                               <br>
                               <br>
 
-                                  <a href="#" target="_blank"><span class="glyphicon glyphicon-download"></span>Download my CV</a>
+                                  <a href="/CV" target="_blank"><span class="glyphicon glyphicon-download"></span>My CV</a>
 
                           </address>
                       </div>
@@ -98,9 +98,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     {%load staticfiles%}
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{%static 'Home/js/bootstrap.min.js'%}"></script>
+
 
 
   </body>

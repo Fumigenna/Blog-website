@@ -28,6 +28,7 @@ ALLOWED_HOSTS = [u'fumigenna.pythonanywhere.com', u'127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'CV.apps.CvConfig',
     'Contact.apps.ContactConfig',
     'Blog.apps.BlogConfig',
     'Home.apps.HomeConfig',
@@ -116,6 +117,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+#STATIC_ROOT= 'static'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), )
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), '/Home/static/Home','/Blog/static/Blog/', '/Contact/static/' )

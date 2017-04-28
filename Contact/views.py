@@ -6,3 +6,5 @@ def index_contact(request):
     template = loader.get_template('contact/contact.html')
     context = { }
     return HttpResponse(template.render(context, request))
+
+

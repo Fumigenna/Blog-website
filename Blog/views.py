@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
 
-
 def index_blog(request):
     from .models import BlogEntry
 
@@ -14,7 +13,3 @@ def index_blog(request):
     }
 
     return HttpResponse(template.render(context, request))
-
-
-
-
